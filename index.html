@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QUIZ 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url('purple.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            text-align: center;
+            padding: 10px;
+        }
+        label {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 style="background-color:mediumpurple; font-style: italic;">Ticketing Center</h1>
+    <h1 style="background-color:lightpink; font-family: serif;">Fill out the form below</h1>
+
+    <form>
+        <div class="mb-3">
+            <label for="name">Complete Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Type your name">
+        </div>
+
+        <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Type your email">
+        </div>
+
+        <button class="btn btn-danger" type="button" onclick="check_discount()">SUBMIT INFO</button>
+    </form>
+
+    <h1 style="background-color:lightpink; font-family: serif;">Ticket price: Check your ticket price</h1>
+
+    <form>
+        <div class="mb-3">
+            <label>Choose your seat:</label>
+            <select class="form-select" id="seatType">
+                <option value="none">Select</option>
+                <option value="250">Lowerbox A - ₱250</option>
+                <option value="300">Higherbox A - ₱300</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Choose an option:</label>
+            <select class="form-select" id="seatNumber">
+                <option value="none">Select</option>
+                <option value="250">Seats 1-52</option>
+                <option value="300">Seats 53-105</option>
+            </select>
+        </div>
+
+        <button class="btn btn-danger" type="button" onclick="check_discount()">TICKET PRICE</button>
+    </form>
+
+    <h1 style="background-color:lightpink; font-style: italic;">Print ticket: Select your ticket; Scroll down</h1>
+
+    <img src="retro_blue_movie_ticket.png" class="img-fluid" alt="Movie Ticket">
+
+    <br><br>
+
+    <button class="btn btn-primary" type="button" onclick="check_discount()">BUY MORE TICKETS</button>
+</div>
+
+<script>
+    function check_discount() {
+        alert("Functionality not yet implemented.");
+    }
+</script>
+
+</body>
+</html>
